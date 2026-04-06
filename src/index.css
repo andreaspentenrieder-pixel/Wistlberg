@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Myriad Pro", "Myriad", "PT Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Myriad Pro", "Myriad", "PT Sans", sans-serif;
+  
+  --color-brand-50: #f4f7f9;
+  --color-brand-100: #e9eff3;
+  --color-brand-200: #d3dfeb;
+  --color-brand-300: #b0c6db;
+  --color-brand-400: #88a7c6;
+  --color-brand-500: #6c8ca9;
+  --color-brand-600: #57728d;
+  --color-brand-700: #475c72;
+  --color-brand-800: #3b4c5d;
+  --color-brand-900: #33404d;
+  --color-brand-950: #222a33;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-50 text-brand-950 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
